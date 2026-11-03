@@ -1,0 +1,14 @@
+{
+  "store": "VINUM STORE",
+  "version": "1.0",
+  "edition": "PS3 Edition com banner PS3 HEN e ícones de plataforma",
+  "note": "Catalogo demonstrativo. Edite app.js para cadastrar os links dos conteudos.",
+  "categories": [
+    "PS3",
+    "PS1",
+    "PS2",
+    "HOMEBREW",
+    "APLICATIVOS"
+  ],
+  "games": []
+}

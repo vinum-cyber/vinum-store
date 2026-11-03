@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VINUM STORE 1.0 - PS3 Edition</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="page">
+        <div id="sidebar">
+            <h1>VINUM<span>STORE</span></h1>
+            <p class="version">VERSÃO 1.0 - PS3 EDITION</p>
+            <div class="nav">
+                <a href="#inicio" class="active">INÍCIO</a>
+                <a href="#bibliotecas">BIBLIOTECAS</a>
+                <a href="#downloads">DOWNLOADS</a>
+            </div>
+            <div class="sidebar-footer">SUA LOJA, SEU PLAYSTATION</div>
+        </div>
+
+        <div id="main">
+            <div class="top-header" id="inicio">
+                <h2>Bem-vindo à VINUM STORE</h2>
+                <p>Seu universo de jogos começa aqui.</p>
+                <p class="online">SISTEMA ONLINE</p>
+            </div>
+
+            <div class="banner">
+                <div class="banner-shade">
+                    <p class="tag">VINUM STORE ORIGINAL</p>
+                    <h2>SUA PRÓXIMA AVENTURA<br>COMEÇA AQUI.</h2>
+                    <p>Explore nossa biblioteca digital.</p>
+                    <a class="button" href="#bibliotecas">EXPLORAR CATÁLOGO</a>
+                </div>
+            </div>
+
+            <div class="games" id="bibliotecas">
+                <h2>Jogos e conteúdos em destaque</h2>
+                <p>Escolha uma biblioteca para ver os conteúdos disponíveis.</p>
+                <div class="search-box">
+                    <input type="text" id="gameSearch" name="gameSearch"
+                           placeholder="Pesquisar jogos e aplicativos..." />
+                </div>
+
+                <div class="featured-grid">
+                    <div class="featured-card">
+                        <div class="featured-cover cover-blue">
+                            <span>VINUM</span><small>PLAYSTATION 3</small>
+                        </div>
+                        <div class="featured-info">
+                            <span class="platform">PS3</span>
+                            <h3>Biblioteca PlayStation 3</h3>
+                            <p>Conteúdos disponíveis para PS3.</p>
+                            <button type="button" onclick="openDetails('PS3')">VER DETALHES</button>
+                        </div>
+                    </div>
+
+                    <div class="featured-card">
+                        <div class="featured-cover cover-purple">
+                            <span>VINUM</span><small>PLAYSTATION 2</small>
+                        </div>
+                        <div class="featured-info">
+                            <span class="platform">PS2</span>
+                            <h3>Biblioteca PlayStation 2</h3>
+                            <p>Conteúdos disponíveis para PS2.</p>
+                            <button type="button" onclick="openDetails('PS2')">VER DETALHES</button>
+                        </div>
+                    </div>
+
+                    <div class="featured-card">
+                        <div class="featured-cover cover-red">
+                            <span>VINUM</span><small>PLAYSTATION 1</small>
+                        </div>
+                        <div class="featured-info">
+                            <span class="platform">PS1</span>
+                            <h3>Biblioteca PlayStation 1</h3>
+                            <p>Conteúdos disponíveis para PS1.</p>
+                            <button type="button" onclick="openDetails('PS1')">VER DETALHES</button>
+                        </div>
+                    </div>
+
+                    <div class="featured-card">
+                        <div class="featured-cover cover-green">
+                            <span>VINUM</span><small>HOMEBREW</small>
+                        </div>
+                        <div class="featured-info">
+                            <span class="platform">HOMEBREW</span>
+                            <h3>Homebrews e aplicativos</h3>
+                            <p>Ferramentas e aplicativos para console.</p>
+                            <button type="button" onclick="openDetails('HOMEBREW')">VER DETALHES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details-modal" id="detailsModal">
+                <div class="details-content">
+                    <button class="close-button" type="button" onclick="closeDetails()">FECHAR</button>
+                    <div class="details-heading">
+                        <img id="detailsIcon" class="details-icon" src="assets/ps3-icon.png" alt="Ícone PlayStation">
+                        <div>
+                            <h2 id="detailsTitle">Biblioteca</h2>
+                            <p id="detailsDescription">Selecione um conteúdo.</p>
+                        </div>
+                    </div>
+                    <div id="gameList" class="game-list"></div>
+                    <p class="details-version">VINUM STORE 1.0 - PS3 EDITION</p>
+                </div>
+            </div>
+
+            <div id="downloads">
+                <p class="footer">VINUM STORE 1.0 - INTERFACE ADAPTADA PARA NAVEGADORES ANTIGOS.</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
